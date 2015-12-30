@@ -1,0 +1,327 @@
+@charset "UTF-8";
+body {
+  background-color:#fff !important;font: 14px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  "Segoe UI Symbol";color: #333;
+}
+
+.btn {
+  padding: 6px 10px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.avatar {
+  border-radius: 3px;
+}
+
+.issues-list .issue:hover {
+  background-color: #F7F7F7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.issues-list .issue.closed:hover {
+  background-color: #F0F0F0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body[data-page="projects:issues:show"] .content-wrapper, body[data-page="projects:merge_requests:show"] .content-wrapper {
+  background: none;
+  border: none;
+}
+body[data-page="projects:issues:show"] .container-fluid, body[data-page="projects:merge_requests:show"] .container-fluid {
+  background: none;
+  border: none;
+  padding-top: 0;
+}
+
+.issuable-affix.affix, .issuable-affix.affix-top {
+  position: static;
+}
+
+.issue-details .issue-title {
+  padding-bottom: 8px;
+}
+.issue-details .issue-title .header-number {
+  color: #AAA;
+}
+.issue-details .issue-box {
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.issue-details .issue-box:before {
+  font-family: FontAwesome;
+}
+.issue-details .issue-box.issue-box-open:before {
+  content: "j";
+}
+.issue-details .issue-box.issue-box-closed:before {
+  content: "X";
+}
+.issue-details .issue-box.issue-box-open {
+  background-color: #6CC644;
+}
+.issue-details .issue-box.issue-box-closed {
+  background-color: #BD2C00;
+}
+.issue-details .pull-right {
+  margin-top: -3px;
+}
+
+.page-title {
+  font-weight: normal;
+}
+
+.issue-discussion > .gray-content-block {
+  display: none;
+}
+
+ul.notes {
+  border-top: 2px solid #F3F3F3;
+  border-bottom: 2px solid #F3F3F3;
+  margin: 10px 0;
+}
+ul.notes .note:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #F3F3F3;
+  z-index: -1;
+}
+ul.notes .note:not(.system-note):before {
+  left: 79px;
+}
+ul.notes .system-note:before {
+  left: 15px;
+}
+ul.notes .note:not(.system-note) .timeline-content:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #F7F7F7;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  border-color: #DDD;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: 14px;
+  margin-left: -6px;
+}
+ul.notes .system-note {
+  margin-left: 48px;
+  padding-left: 33px;
+}
+ul.notes .system-note .timeline-content:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #EEE;
+  position: absolute;
+  margin-left: -45px;
+}
+ul.notes .system-note .timeline-icon .avatar {
+  visibility: visible;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+ul.notes .system-note .note-body {
+  margin-left: 20px;
+}
+
+ul.notes .note {
+  border: none;
+}
+ul.notes .note:not(.system-note) {
+  padding: 9px;
+}
+ul.notes .note:not(.system-note) .note-header, ul.notes .note:not(.system-note) .note-body {
+  border: 1px solid #DDD;
+}
+ul.notes .note:not(.system-note) .note-header {
+  padding: 8px 10px;
+  background-color: #F7F7F7;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: none;
+  overflow: auto;
+}
+ul.notes .note:not(.system-note) .note-body {
+  padding: 10px;
+  background-color: #FFF;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: none;
+}
+ul.notes .note:not(.system-note) .note-actions {
+  margin-top: 1px;
+}
+ul.notes .note:not(.system-note) .note-actions i {
+  color: #BBB;
+}
+ul.notes .system-note {
+  background: none;
+}
+
+.issue-form-holder label.control-label {
+  width: 120px;
+}
+
+.new_note {
+  margin: 18px -5px 0 50px;
+}
+
+.new_note, ul.notes .note .note-header[style='display: none;'] + .note-body {
+  padding: 0 0 10px 0;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  background: #FFF;
+}
+
+.edit_note .md-header, .new_note .md-header {
+  background: #F7F7F7;
+  padding: 6px 10px 0;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #DDD;
+}
+.edit_note .md-header .center-top-menu, .new_note .md-header .center-top-menu {
+  margin: 0;
+  padding: 0;
+  height: 35px;
+}
+.edit_note .md-header .center-top-menu li, .new_note .md-header .center-top-menu li {
+  padding: 4px 12px;
+}
+.edit_note .md-header .center-top-menu li.active, .new_note .md-header .center-top-menu li.active {
+  background-color: #FFF;
+  border-color: #DDD;
+  border-radius: 3px 3px 0 0;
+  border-width: 1px 1px 0;
+  border-style: solid solid none;
+}
+.edit_note .md-header .center-top-menu li a, .edit_note .md-header .center-top-menu li.active a, .new_note .md-header .center-top-menu li a, .new_note .md-header .center-top-menu li.active a {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.edit_note .md-write-holder, .new_note .md-write-holder {
+  padding: 10px 0;
+  margin: 0 10px;
+}
+.edit_note .md-write-holder .note_text, .new_note .md-write-holder .note_text {
+  max-height: 500px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+  border-bottom: 1px dashed #DDD;
+}
+.edit_note .md-write-holder .comment-hints, .new_note .md-write-holder .comment-hints {
+  padding: 10px 10px 5px;
+  border: 1px solid #CCC;
+  border-radius: 0 0 3px 3px;
+}
+.edit_note .md-preview-holder, .new_note .md-preview-holder {
+  padding: 10px;
+  margin-bottom: 29px;
+  border: none;
+}
+.edit_note .note-form-actions, .new_note .note-form-actions {
+  padding: 0 10px 10px 10px;
+  background-color: #FFF;
+}
+
+ul.notes .note .note-body .note-text code {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  font-size: 14px !important;
+}
+ul.notes .note .note-body .note-text pre {
+  padding: 16px;
+  background-color: #F7F7F7 !important;
+  border-color: transparent !important;
+  border-radius: 3px;
+}
+ul.notes .note .note-body .note-text pre code {
+  background-color: inherit !important;
+}
+ul.notes .note .note-body .note-text .task-list-item {
+  margin-left: -1em;
+}
+ul.notes .note .note-body .note-text .task-list-item input[type="checkbox"] {
+  margin-bottom: 2.5px;
+  vertical-align: middle;
+}
+ul.notes .note .note-body .note-text ul, ul.notes .note .note-body .note-text ul.task-list {
+  margin: 0 0 9px 0 !important;
+  padding-left: 2em !important;
+  list-style: disc;
+}
+ul.notes .note .note-body .note-text ul ul, ul.notes .note .note-body .note-text ul.task-list ul {
+  margin-bottom: 0;
+  list-style: circle;
+}
+ul.notes .note .note-body .note-text ul ul ul, ul.notes .note .note-body .note-text ul.task-list ul ul {
+  list-style: square;
+}
+
+.status-box{border-radius:3px;display:inline-block;float:none;padding:4px 18px;font-weight:bold;margin:10px 7px;margin-right:15px;text-align:center;line-height:20px}
+.status-box.status-box-open {background-color: #6CC644;color: #FFF;}
+.content-block.oneline-block, .gray-content-block.oneline-block{margin-left:-5px;border:1px solid #e5e5e5;margin-bottom:7px}
+header .search .search-input{height:30px;font-size:12px;color:#333;border-radius:3px;}
+header.navbar-gitlab{background-color: #FAFAFA;border-bottom: 1px solid #e5e5e5;height:58px}
+header .header-content .title a{color:#4078c0}
+.detail-page-header{border-bottom:0px;margin-top:-25px;margin-right:0px;margin-left:-27px;font-size:15px}
+.detail-page-description.gray-content-block.second-block{background:#fff;border:1px solid #e5e5e5;margin-top:-5px;margin-left:-5px;}
+.pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-top:8px;}
+.btn.btn-grouped, .project-home-panel .btn-grouped.visibility-level-label, .snippet-holder .file-actions .btn-grouped.btn-clipboard{border-radius:3px}
+.issue-details .issuable-details .content-block, .gray-content-block{background:#fff;border:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;margin-left:18px;}
+.issuable-affix.affix-top{margin-top:10px;border:none}
+.center-top-menu{margin-top: -33px;margin-left: -6px;}
+input[type='search'].search-text-input {height:32px;width:220px}
+.issues-holder{border:1px solid #e5e5e5;margin-left:-6px;padding:10px 15px;}
+#new_issue_link{background-color: #6CC644;color: #FFF;}
+.select2-container .select2-choice, .select2-container.select2-drop-above .select2-choice{height:32px;font-size:13px;}
+.issuable-details section{border-right:0px;}
+.new_note, ul.notes .note .note-header[style='display: none;'] + .note-body{margin-top:2px}
+.new_note .note-form-actions, .edit_note .note-form-actions{margin-top:0px}
+.project-issuable-filter .controls{margin-top:15px}
+.detail-page-description .title.title{font-size:20px;font-weight:bold;margin-bottom:17px;margin-top:5px}
+.gl-pagination .pagination li>a, .gl-pagination .pagination li>span{padding:7px 14px;border:1px solid  #e5e5e5;}
+.new_note, ul.notes .note .note-header[style='display: none;'] + .note-body{padding:0 0 5px 0;}
+.center-top-menu li.active a{border-bottom:2px #4078c0 solid}
+.pagination>.active>a, .pagination>.active>a:hover,.pagination>.active>a:focus, .pagination>.active>span, .pagination>.active>span:hover, .pagination>.active>span:focus{color: white;background-color: #4078c0;}
+.issues-other-filters .pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-top:0px!important}
+.detail-page-header .pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-top:10px;margin-right:-0px}
+.author{font-weight:bold;text-decoration:none;}
+a.btn.btn-new.new-project-item-select-button{background-color: #6CC644;border-color: #6CC644;color: white;}
+.wiki h2{margin-bottom:0px;margin-top:15px}
+.wiki h3{font-weight:600}
+.content-block.top-block, .gray-content-block.top-block{border-top:1px solid #e5e5e5;}
+.tree-download-holder .pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-right:20px}
+.issue-details .issuable-details .content-block, .gray-content-block{margin-top:-15px}
+.btn.btn-close:hover, .project-home-panel .btn-close.visibility-level-label:hover, .snippet-holder .file-actions .btn-close.btn-clipboard:hover{color:#B94A48;background-color: #fafafa}
+.btn.btn-close, .project-home-panel .btn-close.visibility-level-label, .snippet-holder .file-actions .btn-close.btn-clipboard{color: #e52c5a;}
+.pagination>li>a:hover, .pagination>li>a:focus, .pagination>li>span:hover, .pagination>li>span:focus{color: white;background-color: #4078c0;}
+.issuable-filter-count span{margin-bottom:0;padding:0}
+.gray-content-block.activity-filter-block{border-bottom:1px solid #e5e5e5;}
+.timeline .timeline-entry:target{background-color:#fff}
+.issue-title ul.controls>li{margin-right: 5px;font-size: 12px!important;}
+.panel.panel-small .panel-heading{font-size:14px;font-weight:bold}
+.panel-heading .pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-top:1px}
+.pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-top:2px}
+.commits-feed-holder.hidden-xs.hidden-sm{margin-top:4px}
+.issue-details .issuable-details .content-block, .gray-content-block{padding:10px 15px;border-bottom:0px;margin-left:-8px;margin-top:25px;margin-right:0px}
+.issue-details .issuable-details .content-block, .gray-content-block{border-bottom:1px solid #e5e5e5;margin-left: -5px;margin-top: -9px;}
+.issues-filters .filter-form .issue-details .issuable-details .content-block, .gray-content-block {margin-left: -6px;margin-top: -16px;}
+.project-stats.gray-content-block.second-block{border-right:0px;border-left:0px}
+.issue .content-block.second-block, .gray-content-block.second-block{border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;}
+.gl-pagination{background-color:#fff;border-top:0px}
+.issues-list .issue:hover{border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;background-color:#f5f5f5}
+.merge-request.closed, .issue.closed{background-color:#fff;border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;}
+ul.content-list>li:last-child{border-bottom:1px solid #e5e5e5;}
