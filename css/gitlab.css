@@ -282,9 +282,7 @@ header .header-content .title a{color:#4078c0}
 .btn.btn-grouped, .project-home-panel .btn-grouped.visibility-level-label, .snippet-holder .file-actions .btn-grouped.btn-clipboard{border-radius:3px}
 .issue-details .issuable-details .content-block, .gray-content-block{background:#fff;border:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;margin-left:18px;}
 .issuable-affix.affix-top{margin-top:10px;border:none}
-.center-top-menu{margin-top: -33px;margin-left: -6px;}
 input[type='search'].search-text-input {height:32px;width:220px}
-.issues-holder{border:1px solid #e5e5e5;margin-left:-6px;padding:10px 15px;}
 #new_issue_link{background-color: #6CC644;color: #FFF;}
 .select2-container .select2-choice, .select2-container.select2-drop-above .select2-choice{height:32px;font-size:13px;}
 .issuable-details section{border-right:0px;}
@@ -302,7 +300,7 @@ input[type='search'].search-text-input {height:32px;width:220px}
 a.btn.btn-new.new-project-item-select-button{background-color: #6CC644;border-color: #6CC644;color: white;}
 .wiki h2{margin-bottom:0px;margin-top:15px}
 .wiki h3{font-weight:600}
-.content-block.top-block, .gray-content-block.top-block{border-top:1px solid #e5e5e5;}
+.content-block.top-block, .gray-content-block.top-block{border:1px solid #e5e5e5;}
 .tree-download-holder .pull-right, #modal_merge_info .modal-dialog .btn-clipboard{margin-right:20px}
 .issue-details .issuable-details .content-block, .gray-content-block{margin-top:-15px}
 .btn.btn-close:hover, .project-home-panel .btn-close.visibility-level-label:hover, .snippet-holder .file-actions .btn-close.btn-clipboard:hover{color:#B94A48;background-color: #fafafa}
@@ -318,10 +316,27 @@ a.btn.btn-new.new-project-item-select-button{background-color: #6CC644;border-co
 .commits-feed-holder.hidden-xs.hidden-sm{margin-top:4px}
 .issue-details .issuable-details .content-block, .gray-content-block{padding:10px 15px;border-bottom:0px;margin-left:-8px;margin-top:25px;margin-right:0px}
 .issue-details .issuable-details .content-block, .gray-content-block{border-bottom:1px solid #e5e5e5;margin-left: -5px;margin-top: -9px;}
-.issues-filters .filter-form .issue-details .issuable-details .content-block, .gray-content-block {margin-left: -6px;margin-top: -16px;}
 .project-stats.gray-content-block.second-block{border-right:0px;border-left:0px}
 .issue .content-block.second-block, .gray-content-block.second-block{border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;}
 .gl-pagination{background-color:#fff;border-top:0px}
 .issues-list .issue:hover{border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;background-color:#f5f5f5}
 .merge-request.closed, .issue.closed{background-color:#fff;border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;}
 ul.content-list>li:last-child{border-bottom:1px solid #e5e5e5;}
+.detail-page-description .description{margin-top:0px;}
+.center-top-menu{margin-top: -33px;}
+.md{height: 19.6em;}
+.form-horizontal .form-group{margin-bottom: 33px;}
+.form-horizontal .control-label{padding-top: 20px;}
+.form-horizontal .issue-form .gfm-form .js-requires-input .form-group{margin-bottom:30px}
+.zennable .zen-enter-link{top:-6px;right:8px}
+.form-horizontal .issue-form .gfm-form .js-requires-input .content-block.footer-block, .gray-content-block.footer-block{border-bottom:1px solid #e5e5e5;}
+.issues-list .issue:hover{background-color:#f0f0f0}
+.issues-list .issue{border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5}
+ul.notes .note .note-body .note-text code{color: #c7254e;background-color: #f9f2f4;}
+.project-issuable-filter .center-top-menu{margin-left:-6px}
+.issues-holder{margin-left:-6px;padding:0px 16px;border-top: 1px solid #e5e5e5}
+.projects-search-form{border:1px solid #e7e9ed;}
+.projects-list{margin:0px;}
+.projects-list>li{border-left:1px solid #eee;border-right:1px solid #eee;}
+.projects-list>li:last-child{border-bottom:1px solid #eee;}
+.issues-filters .filter-form .issue-details .issuable-details .content-block, .gray-content-block {margin-left: -6px;margin-top: -16px;}
